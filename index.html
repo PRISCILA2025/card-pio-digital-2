@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaborJá</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍔 SaborJá</h1>
+        <p>Seu pedido favorito, pertinho de você!</p>
+    </header>
+
+    <main>
+        <h2>Categorias</h2>
+
+        <nav class="categorias">
+            <a href="#lanches">🍔 Lanches</a>
+            <a href="#pizzas">🍕 Pizzas</a>
+            <a href="#bebidas">🥤 Bebidas</a>
+            <a href="#sobremesas">🍰 Sobremesas</a>
+        </nav>
+
+        <h2>Escolha seu pedido</h2>
+
+        <section class="produtos">
+
+            <article class="produto" id="lanches">
+                <span class="emoji">🍔</span>
+                <h3>Hambúrguer da Casa</h3>
+                <p>Pão, hambúrguer, queijo e salada.</p>
+                <strong>R$ 25,00</strong>
+                <button onclick="fazerPedido('Hambúrguer da Casa')">
+                    Pedir
+                </button>
+            </article>
+
+            <article class="produto" id="pizzas">
+                <span class="emoji">🍕</span>
+                <h3>Pizza de Queijo</h3>
+                <p>Pizza média, com queijo e molho especial.</p>
+                <strong>R$ 39,00</strong>
+                <button onclick="fazerPedido('Pizza de Queijo')">
+                    Pedir
+                </button>
+            </article>
+
+            <article class="produto" id="bebidas">
+                <span class="emoji">🥤</span>
+                <h3>Suco de Laranja</h3>
+                <p>Suco natural, feito na hora.</p>
+                <strong>R$ 8,00</strong>
+                <button onclick="fazerPedido('Suco de Laranja')">
+                    Pedir
+                </button>
+            </article>
+
+            <article class="produto" id="sobremesas">
+                <span class="emoji">🍰</span>
+                <h3>Fatia de Bolo</h3>
+                <p>Bolo de chocolate com cobertura.</p>
+                <strong>R$ 12,00</strong>
+                <button onclick="fazerPedido('Fatia de Bolo')">
+                    Pedir
+                </button>
+            </article>
+
+        </section>
+
+        <p id="mensagem" aria-live="polite"></p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
